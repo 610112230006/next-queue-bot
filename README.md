@@ -1,8 +1,6 @@
-# next-queue-bot
+## next-queue-bot
 
-## สำหรับ linux
-
-# พิมพ์คำสั่งในไฟล์โปรเจค
+# สำหรับ linux พิมพ์คำสั่งในไฟล์โปรเจคว่า
 
 $ cp .env.example .env 
 
@@ -10,7 +8,7 @@ $ cp .env.example .env
 
 $ npm install
 
-# สังรัน project
+# รัน project ด้วยคำสั่ง
 $ npm run dev
 
 # สำหรับ window 
