@@ -9,6 +9,7 @@ $ cp .env.example .env
 $ npm install
 
 รัน project ด้วยคำสั่ง
+
 $ npm run dev
 
 # สำหรับ window 
