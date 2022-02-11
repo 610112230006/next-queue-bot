@@ -26,10 +26,10 @@ npm run dev
 localhost:8383 
 (แล้วแต่ที่กำหนดใน .env)
 
-#Build Docker file
+# Build Docker file
 docker build -t next-queue .
 
+# Run docker container
 
-#Run docker container
-docker run -it -p 5000:5000 next-queue
+docker run -it -p 8383:8383 next-queue
 
