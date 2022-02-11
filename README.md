@@ -25,3 +25,11 @@ npm run dev
 6. ตรวจสอบการทำงานที่ 
 localhost:8383 
 (แล้วแต่ที่กำหนดใน .env)
+
+#Build Docker file
+docker build -t next-queue .
+
+
+#Run docker container
+docker run -it -p 5000:5000 next-queue
+
