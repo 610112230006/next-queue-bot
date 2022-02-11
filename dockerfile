@@ -1,3 +1,4 @@
+# Dockerfile
 FROM node:11.13.0-alpine
 
 # create destination directory
@@ -11,18 +12,11 @@ RUN apk add git
 # copy the app, note .dockerignore
 COPY . /usr/src/nuxt-app/
 RUN npm install
-
-# build necessary, even if no static files are needed,
-# since it builds the server as well
 RUN npm run build
 
-# expose 5000 on container
-EXPOSE 5000
+EXPOSE 8383
 
-# set app serving to permissive / assigned
 ENV NUXT_HOST=0.0.0.0
-# set app port
-ENV NUXT_PORT=5000
+ENV NUXT_PORT=8383
 
-# start the app
 CMD [ "npm", "start" ]
