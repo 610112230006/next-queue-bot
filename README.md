@@ -30,6 +30,5 @@ localhost:8383
 docker build -t next-queue .
 
 # Run docker container
-
-docker run -it -p 8383:8383 next-queue
+docker run --publish 8383:8383 next-queue
 
